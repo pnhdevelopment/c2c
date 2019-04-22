@@ -22,17 +22,20 @@ class Buy extends Component {
         <div className="container">
           <div className="row">
 
-            <div className="col-12 col-lg-2 mb-3">              
-              <YourSummary />
+            <div className="col-12 col-lg-2 mb-3">
+              <YourSummary />          
             </div>
+
 
             <div className="col-12 col-lg-7 mb-3 bg-white">
               <MultiStepForm />
             </div>
 
+
             <div className="col-12 col-lg-3 mb-3">
               <YoureSigningUpFor />
             </div>
+
 
           </div> 
         </div>

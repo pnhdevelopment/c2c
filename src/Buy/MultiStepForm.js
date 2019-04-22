@@ -19,32 +19,32 @@ class MultiStepForm extends Component {
 
 
 	continue(event){
-		/* Get container element of button, then add 'hidden' class to it */
+		/* Get container element of button, then add 'd-none' class to it */
 		let container = event.target.closest(".step");
-		container.classList.add("hidden");
+		container.classList.add("d-none");
 
-		/* Get element adjacent to container element, then remove its 'hidden' class */
+		/* Get element adjacent to container element, then remove its 'd-none' class */
 		let nextSibling = container.nextSibling;
-		nextSibling.classList.remove("hidden");
+		nextSibling.classList.remove("d-none");
 
 	}
 
 
 	goBack(event){
-		/* Get container element of button, then add 'hidden' class to it */
+		/* Get container element of button, then add 'd-none' class to it */
 		let container = event.target.closest(".step");
-		container.classList.add("hidden");
+		container.classList.add("d-none");
 
-		/* Get element adjacent to container element, then remove its 'hidden' class */
+		/* Get element adjacent to container element, then remove its 'd-none' class */
 		let previousSibling = container.previousSibling;
-		previousSibling.classList.remove("hidden");
+		previousSibling.classList.remove("d-none");
 
 	}
 
 
 	render() {
 		return (
-			<div id="MultiStepForm">
+			<div id="MultiStepForm" >
 				{/*
 				<img className="w-100 d-none" src={reviewAndJoin} alt=""/>
 				<img className="w-100 d-none" src={aboutYou} alt=""/>
@@ -67,7 +67,7 @@ class MultiStepForm extends Component {
 
 
 
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
 					<h1 className="text-center mb-4">About You</h1>
 					<h2 className="h4 font-weight-bold">Personal Details</h2>
 
@@ -117,7 +117,7 @@ class MultiStepForm extends Component {
 
 
 
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
 					<h1 className="text-center mb-4">About You</h1>
 					<h2 className="h4 font-weight-bold">Medicare Details</h2>
 
@@ -145,7 +145,7 @@ class MultiStepForm extends Component {
 
 
 				
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
 					<h1 className="text-center mb-4">About You</h1>
 					<h2 className="h4 font-weight-bold">Previous Insurance Details</h2>
 					<p>Have you held Private Health Insurance previously?</p>
@@ -159,7 +159,7 @@ class MultiStepForm extends Component {
 
 
 
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
 					<h1 className="text-center mb-4">Rebate</h1>
 					<p className="h5 font-weight-normal">According to the information you have provided to us, your quote includes an Australian Government Health Insurance Rebate of:</p>
 					<div className="text-center py-4">
@@ -180,7 +180,7 @@ class MultiStepForm extends Component {
 
 
 
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
 					<h1 className="text-center mb-4">Contact Details</h1>
 					
 					<h2 className="h3 font-weight-bold">Home Address*</h2>
@@ -229,7 +229,7 @@ class MultiStepForm extends Component {
 
 
 
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
 
 					<h1 className="text-center mb-4">Payment Details</h1>
 					I would like to pay my premium by:<br/>
@@ -287,7 +287,7 @@ class MultiStepForm extends Component {
 
 
 
-				<div className="bg-white p-3 step hidden">
+				<div className="bg-white p-3 step d-none">
     	            <h1 className="text-center mb-4">Complete and Submit</h1>
     	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laboriosam nulla minus sint provident id rerum porro. Ratione, harum.</p>
     	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laboriosam nulla minus sint provident id rerum porro. Ratione, harum.</p>
