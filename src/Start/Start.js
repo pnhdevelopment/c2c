@@ -7,21 +7,21 @@ class Start extends Component {
 
   handleClick(event, id) {
 
-    // Get reference to the container element
+    /* Get reference to the container element */
     let elems = document.querySelectorAll(id + " button");
 
-    // Within the container element, remove "selected" class
-    // from all buttons
+    /* Within the container element, remove
+    "selected" class from all buttons */
     [].forEach.call(elems, function(el) {
         el.classList.remove("selected");
     });
 
-    //add the 'selected' class to the clicked button
+    /* add the 'selected' class to the clicked button */
     event.target.classList.add('selected');
 
-
+    /* tagret the next element sibling, remove d-none
+    class, scroll to element, then change its opacity to 1 */
     let nextSibling = document.querySelector(id).nextSibling;
-    console.log(nextSibling);
     nextSibling.classList.remove("d-none");
     nextSibling.scrollIntoView({ behavior: 'smooth' });
     nextSibling.classList.remove("hidden");
@@ -39,18 +39,18 @@ class Start extends Component {
         {/* Titles */}
         <div className="container">
           <div className="row">
-            <div className="col-8 m-auto text-center">
+            <div className="col-12 col-lg-8 m-auto text-center">
               <h1 className="h3 mb-4">We're here to help you find health cover that's right for you.</h1>
-              <h2 className="h3 mb-4"><strong>What's important to you?</strong></h2>
+              <h2 className="h3 mb-4 font-weight-bold">What's important to you?</h2>
             </div>
           </div>
         </div> 
 
         
         {/* I need health insurance for */}
-        <div className="container mb-4 p-3" id="insurance-for">
+        <div className="container mb-4" id="insurance-for">
           <div className="row">
-            <div className="col-8 m-auto text-center bg-white">
+            <div className="col-12 col-lg-8 m-auto text-center bg-white p-3">
 
               <h3 className="mb-3">I need health insurance for...</h3>
               <div className="row">
@@ -73,9 +73,9 @@ class Start extends Component {
         </div>
 
         {/* I live in */}
-        <div className="container mb-4 p-3 hidden d-none" id="i-live-in">
+        <div className="container mb-4 hidden d-none" id="i-live-in">
           <div className="row">
-            <div className="col-8 m-auto text-center bg-white">
+            <div className="col-12 col-lg-8 m-auto text-center bg-white p-3">
               <h3 className="mb-3">I live in...</h3>
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
@@ -108,9 +108,9 @@ class Start extends Component {
         </div>
 
         {/* I need cover for */}
-        <div className="container mb-4 p-3 hidden d-none" id="cover-for">
+        <div className="container mb-4 hidden d-none" id="cover-for">
           <div className="row">
-            <div className="col-8 m-auto text-center bg-white">
+            <div className="col-12 col-lg-8 m-auto text-center bg-white p-3">
               <h3 className="mb-3">I need cover for:</h3>
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
@@ -144,11 +144,11 @@ class Start extends Component {
 
 
         {/* Let's compare your cover */}
-        <div className="container lets-compare mb-5 hidden d-none">
+        <div className="container mb-5 hidden d-none" id="lets-compare">
           <div className="row">
-            <div className="col-8 col-lg-5 m-auto text-center">
-              <button type="button" className="btn btn-outline-primary w-100">
-                <strong>Let's compare your cover</strong>
+            <div className="col-12 col-md-6 col-lg-4 m-auto text-center p-0">
+              <button type="button" className="btn btn-outline-primary w-100 font-weight-bold">
+                Let's compare your cover
               </button>
             </div>
           </div>

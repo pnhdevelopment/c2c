@@ -1,0 +1,14 @@
+#MultiStepForm .step.hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+
+#MultiStepForm .step{
+	transition: 0.7s;
+	position: absolute;
+/*	top: 0;
+	left: 0;*/
+	/*width: 100%;*/
+	opacity: 1;
+	visibility: visible;
+}

@@ -1,8 +1,74 @@
 
+#choose{
+	margin: 0.5rem;
+}
+
+
 #choose .features ul{
+	padding: 0;
+	margin: 0;
+}
+
+#choose .features{
 	padding: 0;
 }
 
 #choose .features li{
 	list-style-type: none;
+	line-height: 1.5rem;
 }
+
+#choose .features li::after{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 500;
+	/*content: "\f007";*/
+	float: right;
+	font-size: 1.2rem;
+}
+
+
+#choose .features li.tick::after{
+	content: "\f058";
+	color: #4594A7;
+}
+
+#choose .features li.cross::after{
+	content: "\f057";
+	color: #C92542;
+}
+
+#choose .features li.restricted::after{
+	font-weight: 900;
+	content: "\f056";
+	color: #4dccde;
+}
+
+.icon-key{
+	font-size: 1.5rem;
+}
+
+.icon-key span::before{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 500;
+	padding-right: 1rem;
+	/*content: "\f007";*/
+	/*float: right;*/
+}
+
+.icon-key span.tick::before{
+	content: "\f058";
+	color: #4594A7;
+}
+
+.icon-key span.cross::before{
+	content: "\f057";
+	color: #C92542;
+}
+
+.icon-key span.restricted::before{
+	font-weight: 900;
+	content: "\f056";
+	color: #4dccde;
+}
+
+
