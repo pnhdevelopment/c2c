@@ -1,0 +1,8 @@
+
+#choose .features ul{
+	padding: 0;
+}
+
+#choose .features li{
+	list-style-type: none;
+}

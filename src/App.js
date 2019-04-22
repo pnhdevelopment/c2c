@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Start from './Start/Start.js';
+import Finish from './Finish/Finish.js';
+import Compare from './Compare/Compare.js';
+import Choose from './Choose/Choose.js';
+import Buy from './Buy/Buy.js';
+
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+		<Router>
+			<Route exact path="/" component={Start} />
+			<Route exact path="/start" component={Start} />
+			<Route path="/finish" component={Finish} />
+			<Route path="/compare" component={Compare} />
+			<Route path="/choose" component={Choose} />
+			<Route path="/buy" component={Buy} />
+		</Router>
     );
   }
 }

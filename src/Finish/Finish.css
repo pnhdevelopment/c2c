@@ -1,0 +1,15 @@
+
+#finish{
+	height: 100%;
+}
+
+#finish .wrapper{
+		/*background-image: url('./bg.svg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center; 
+		height: 100%;*/
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}

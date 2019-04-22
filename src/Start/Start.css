@@ -1,0 +1,45 @@
+/*#start .section{
+  background: white;
+}*/
+
+#start .btn{
+	height: 100%;
+	/*color: #4dccde;*/
+}
+
+#start .btn-outline-primary{
+	color: #212529;
+    border-color: #4dccde;
+}
+
+
+#start .btn-outline-primary:hover, 
+#start .btn-outline-primary:active, 
+#start .btn-outline-primary:focus {
+    color: #212529;
+    background-color: #4dccde;
+    border-color: #4dccde;
+}
+
+
+#start .lets-compare .btn-outline-primary{
+	border-radius: 0;
+	background-color: white;
+	font-size: 1.5rem;
+}
+
+#start .lets-compare .btn-outline-primary:hover, 
+#start .lets-compare .btn-outline-primary:active, 
+#start .lets-compare .btn-outline-primary:focus {
+    background-color: #4dccde;
+}
+
+
+#start .selected.btn-outline-primary{
+    background-color: #4dccde;
+}
+
+.hidden{
+	opacity: 0;
+	transition: 1s;
+}
