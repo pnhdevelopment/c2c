@@ -1,14 +1,34 @@
-#MultiStepForm .step.hidden{
+/*#MultiStepForm .step.hidden{
 	opacity: 0;
 	visibility: hidden;
-}
+}*/
 
-#MultiStepForm .step{
-	transition: 0.7s;
+/*#MultiStepForm .step{
+	transition: 0.7s;*/
 	/*position: absolute;*/
 /*	top: 0;
 	left: 0;*/
 	/*width: 100%;*/
-	opacity: 1;
+	/*opacity: 1;
 	visibility: visible;
+}*/
+
+
+/*#MultiStepForm .btn.continue*/
+
+
+
+#MultiStepForm .btn.continue:hover, 
+#MultiStepForm .btn.continue:active, 
+#MultiStepForm .btn.continue:focus {
+    background-color: #4dccde;
+}
+
+/*#MultiStepForm .btn.continue{
+    background-color: #4dccde;
+}*/
+
+#MultiStepForm a.email-quote{
+	color: #212529;
+	text-decoration: underline;
 }

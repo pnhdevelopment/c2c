@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './Start.css';
 
-import ProgressBar from '../ProgressBar/ProgressBar.js';
+// import ProgressBar from '../ProgressBar/ProgressBar.js';
+
 
 class Start extends Component {
 
@@ -11,13 +12,13 @@ class Start extends Component {
     let elems = document.querySelectorAll(id + " button");
 
     /* Within the container element, remove
-    "selected" class from all buttons */
+    "active" class from all buttons */
     [].forEach.call(elems, function(el) {
-        el.classList.remove("selected");
+        el.classList.remove("active");
     });
 
-    /* add the 'selected' class to the clicked button */
-    event.target.classList.add('selected');
+    /* add the 'active' class to the clicked button */
+    event.target.classList.add('active');
 
     /* tagret the next element sibling, remove d-none
     class, scroll to element, then change its opacity to 1 */
@@ -31,7 +32,7 @@ class Start extends Component {
 
 	render() {
 		return (
-
+  
 	<div id="start">
         
         {/* <ProgressBar /> */}
@@ -55,16 +56,16 @@ class Start extends Component {
               <h3 className="mb-3">I need health insurance for...</h3>
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>Me</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>Me</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>Me and my partner</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>Me and my partner</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>My family</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>My family</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>Me and my kids</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#insurance-for")}>Me and my kids</button>
                 </div>
               </div>
 
@@ -79,28 +80,28 @@ class Start extends Component {
               <h3 className="mb-3">I live in...</h3>
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>ACT</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>ACT</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>NSW</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>NSW</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>NT</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>NT</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>QLD</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>QLD</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>SA</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>SA</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>TAS</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>TAS</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>VIC</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>VIC</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>WA</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#i-live-in")}>WA</button>
                 </div>
               </div>
             </div>
@@ -114,28 +115,28 @@ class Start extends Component {
               <h3 className="mb-3">I need cover for:</h3>
               <div className="row">
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Wellness</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Wellness</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Pregnancy</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Pregnancy</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>For my specific body part</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>For my specific body part</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Health equipment</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Health equipment</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Investigation</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Investigation</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Surgeries & Procedures</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Surgeries & Procedures</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Support & Recovery</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Support & Recovery</button>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 mb-3">
-                  <button type="button" className="btn btn-outline-primary w-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Payment/Cover Inclusions</button>
+                  <button type="button" className="btn btn-outline-primary w-100 h-100" onClick={(event) => this.handleClick(event, "#cover-for")}>Payment/Cover Inclusions</button>
                 </div>
               </div>
             </div>
@@ -147,15 +148,15 @@ class Start extends Component {
         <div className="container mb-5 hidden d-none" id="lets-compare">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4 m-auto text-center p-0">
-              <button type="button" className="btn btn-outline-primary w-100 font-weight-bold">
+              <button type="button" className="btn btn-outline-primary w-100 font-weight-bold no-radius">
                 Let's compare your cover
               </button>
             </div>
           </div>
         </div>
 
-
       </div>
+
 
 		)
 	}

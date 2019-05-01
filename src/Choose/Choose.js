@@ -1,11 +1,25 @@
 import React, { Component, Fragment } from 'react';
 
-import ProgressBar from '../ProgressBar/ProgressBar.js';
+import $ from 'jquery';
+
+
+// import ProgressBar from '../ProgressBar/ProgressBar.js';
 
 
 import './Choose.css';
 
 class App extends Component {
+
+
+  componentDidMount(){
+
+  
+
+
+  	
+
+  }
+
   render() {
     return (
 		<div id="choose">
@@ -16,6 +30,7 @@ class App extends Component {
 
 			{/* <ProgressBar /> */}
 			
+			{/* Deal */}
 			<div className="container bg-white mb-4 p-4">
 			  <div className="row">
 
@@ -37,8 +52,7 @@ class App extends Component {
 			</div>
 
 
-
-
+			{/* Features */}
 			<div className="container p-0">
 			  <div className="row">
 
@@ -101,7 +115,7 @@ class App extends Component {
 			</div>
 
 
-
+			{/* Icon key */}
 			<div className="container py-4 icon-key text-center">
 			  <div className="row justify-content-center">
 			    
@@ -121,22 +135,47 @@ class App extends Component {
 			</div>
 
 
-
+			{/* Download, email, continue */}
 			<div className="container py-4">
-			  <div className="row">
+			  <div className="row d-flex align-items-center">
 			    
-			    <div className="col-6 text-center">
-					<a href="#">Download product disclosure statement</a><br/>
-					<a href="#">Email quote to me</a>
+			    <div className="col-12 col-lg-6 mb-4 text-center">
+					<a download href="#" className="download">
+						Download product disclosure statement
+						<i className="far fa-file-pdf"></i>
+					</a><br/>
+					<a className="email-quote" id="myBtn" data-toggle="modal" data-target="#emailQuoteModal">Email quote to me</a>
 			    </div>
 
-			    <div className="col-6 text-center">
-					<button type="button" className="btn btn-outline-primary">Continue</button>
+			    <div className="col-12 col-lg-6 mb-4 text-center">
+					<button type="button" className="btn btn-outline-primary text-uppercase continue">Continue</button>
 			    </div>
 
 			  </div>
 			</div>
 
+
+			{/* Modal box */}
+			<div className="modal fade" id="emailQuoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div className="modal-dialog" role="document">
+			    <div className="modal-content">
+			      <div className="modal-header pb-0">
+			        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div className="modal-body pt-0">
+			      <h5 className="mb-3" id="exampleModalLabel">Email Address</h5>
+					<div className="input-group">
+					  <input type="text" className="form-control" />
+					  <span className="input-group-btn">
+					    <button className="btn btn-outline-primary" type="button">Go!</button>
+					  </span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 
 		    
 		</div>  

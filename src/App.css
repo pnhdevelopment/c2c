@@ -1,12 +1,78 @@
-html{
-	height: 100%;
+html, body { 
+    height: 100%; 
+    margin: 0;
 }
 
 body{
   background: #ededed;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 #root{
 	height: 100%;
+}
+
+/* For sticky footer */
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+
+/* General utilities */
+.no-radius{
+    border-radius: 0;
+}
+
+.bg-aqua{
+    background-color: #4dccde;
+}
+
+
+/* Buttons */
+.btn-outline-primary{
+	color: #212529;
+    border-color: #4dccde;
+    cursor: pointer;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle,
+.btn-outline-primary:hover, 
+.btn-outline-primary:active, 
+.btn-outline-primary:focus {
+    color: #212529;
+    background-color: #4dccde;
+    border-color: #4dccde;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus{
+    box-shadow: none;
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus{
+    box-shadow: none;
+}
+
+
+/* Checkboxes */
+.custom-control-label::before{
+    border: 1px solid #4dccde;
+}
+
+.custom-checkbox .custom-control-label::before{
+    border-radius: 0;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #4dccde;
+    background-color: #4dccde;
 }

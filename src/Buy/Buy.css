@@ -1,0 +1,7 @@
+#buy #emailQuoteModal .modal-header{
+  border-bottom: 0;
+}
+
+#buy #emailQuoteModal .btn.btn-outline-primary{
+  border-radius: 0 .25rem .25rem 0;
+}

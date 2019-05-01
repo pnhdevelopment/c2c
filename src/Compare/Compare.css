@@ -1,51 +1,13 @@
-/*.results{
-	column-count: 3;
-}*/
-
-#compare .wrapper{
+#compare .item-wrapper{
 	border: 1px solid #4dccde;
 }
 
-#compare .btn-outline-primary{
-	border-radius: 0;
-}
-
-#compare .custom-control-label::before{
-	border: 1px solid #4dccde;
-}
-
-#compare .custom-checkbox .custom-control-label::before{
-	border-radius: 0;
-}
-
-#compare .custom-control-input:checked~.custom-control-label::before {
-    border-color: #4dccde;
-    background-color: #4dccde;
-}
-
-
-
-#compare .btn-outline-primary{
-	border-radius: 0;
-	background-color: white;
-	color: #212529;
-    border-color: #4dccde;
-}
-
-#compare .btn-outline-primary:hover, 
-#compare .btn-outline-primary:active, 
-#compare .btn-outline-primary:focus {
-    background-color: #4dccde;
-}
-
-
-#compare ul {
+#compare ul.covers {
 	list-style: none;
 	padding: 0;
 }
 
-#compare ul li:before {
-	/*content: '✓';*/
+#compare ul.covers li:before {
 	content: '\2713';
 	margin: 10px;
 	color: limegreen;

@@ -1,0 +1,8 @@
+header a{
+	color: black;
+	font-weight: 600;
+}
+
+header a:hover{
+	color: #4dccde;
+}

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import ProgressBar from '../ProgressBar/ProgressBar.js';
+// import ProgressBar from '../ProgressBar/ProgressBar.js';
 import SearchForm from './SearchForm.js';
 import SearchResults from './SearchResults.js';
 
@@ -19,7 +19,7 @@ class Compare extends Component {
 						<SearchForm />
 					</div>
 
-					<div className="col-12 col-lg-9 bg-white py-3">	
+					<div className="col-12 col-lg-9 p-3 p-lg-0">
 						<SearchResults />
 					</div>					
 						

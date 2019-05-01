@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './Buy.css';
 
-import ProgressBar from '../ProgressBar/ProgressBar.js';
+// import ProgressBar from '../ProgressBar/ProgressBar.js';
 
 import yourSigningUpFor from './your-signing-up-for.PNG';
 import MultiStepForm from './MultiStepForm.js';
@@ -10,14 +10,13 @@ import YourSummary from './YourSummary.js';
 import YoureSigningUpFor from './YoureSigningUpFor.js';
 
 
+// <ProgressBar />
 
 
 class Buy extends Component {
   render() {
     return (
       <div id="buy">
-
-        <ProgressBar />
 
         <div className="container">
           <div className="row">

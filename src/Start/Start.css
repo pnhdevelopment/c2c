@@ -2,43 +2,27 @@
   margin: 0.5rem;
 }
 
-#start .btn{
-	height: 100%;
+/*#start .btn{
+	height: 100%;*/
 	/*color: #4dccde;*/
-}
-
-#start .btn-outline-primary{
-	color: #212529;
-    border-color: #4dccde;
-}
-
-
-#start .btn-outline-primary:hover, 
-#start .btn-outline-primary:active, 
-#start .btn-outline-primary:focus {
-    color: #212529;
-    background-color: #4dccde;
-    border-color: #4dccde;
-}
-
+/*}*/
 
 #start #lets-compare .btn-outline-primary{
-	border-radius: 0;
-	background-color: white;
 	font-size: 1.5rem;
+	background-color: white;
 }
 
 #start #lets-compare .btn-outline-primary:hover, 
 #start #lets-compare .btn-outline-primary:active, 
 #start #lets-compare .btn-outline-primary:focus {
-    background-color: #4dccde;
+    background-color: #4dccde !important;
 }
 
 
-#start .selected.btn-outline-primary{
+/*#start .selected.btn-outline-primary{
     background-color: #4dccde;
 }
-
+*/
 
 #insurance-for, #i-live-in, #cover-for, #lets-compare{
 	transition: 0.6s;
