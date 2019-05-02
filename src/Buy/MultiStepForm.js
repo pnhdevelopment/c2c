@@ -48,21 +48,49 @@ class MultiStepForm extends Component {
 				*/}
 
 				{/* Review and Join */}
-				<div className="p-3 d-none" id="review-and-join">
+				<div className="p-3" id="review-and-join">
 					<h1 className="text-center mb-4">Review and Join</h1>
 					<p>You are almost ready to join up.</p>
 					<p>This final process takes just 5 minutes.</p>
 					<p>You will need:</p>
 					<img className="w-100" src={youWillNeed} alt=""/>
-			    	<button
-			    		type="button"
-			    		className="btn btn-outline-primary d-block m-auto text-uppercase font-weight-bold px-5 py-3 bg-aqua"
-			    		onClick={(event) => this.navigate(event, "review-and-join", "about-you-1")}>Continue</button>
-			    	<a href="#"
-			    		className="email-quote d-block text-center my-4"
-			    		data-toggle="modal"
-			    		data-target="#emailQuoteModal">I'm not ready yet,<br/> please email me a quote.</a>
+					<div className="text-center">
+				    	<button
+				    		type="button"
+				    		className="btn btn-outline-primary d-block m-auto text-uppercase font-weight-bold px-5 py-3 bg-aqua"
+				    		onClick={(event) => this.navigate(event, "review-and-join", "about-you-1")}>Continue</button>
+				    	<a href="#"
+				    		className="email-quote d-inline-block text-center my-4"
+				    		data-toggle="modal"
+				    		data-target="#emailQuoteModal">I'm not ready yet,<br/> please email me a quote.</a>
+			    	</div>
 				</div>
+
+
+				{/* Modal box */}
+				<div className="modal fade" id="emailQuoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div className="modal-dialog" role="document">
+				    <div className="modal-content">
+				      <div className="modal-header pb-0">
+				      	<h5 className="mb-3" id="exampleModalLabel">Email Address</h5>
+				        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div className="modal-body pt-0 mb-4">
+				      
+						<div className="input-group">
+						  <input type="text" className="form-control" />
+						  <span className="input-group-btn">
+						    <button className="btn btn-outline-primary bg-aqua" type="button">Go!</button>
+						  </span>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
 
 				{/* About You */}
 				<div className="bg-white p-3 d-none" id="about-you-1">
@@ -230,7 +258,11 @@ class MultiStepForm extends Component {
 					</div>
 					<p className="h5 font-weight-normal">You are required to select the button below to review your rebate before continuing.</p>
 					<div className="py-4 text-center">
-						<button type="button" className="btn btn-outline-primary text-uppercase w-25 py-2">Review Rebate</button>
+						<button
+							type="button"
+							className="btn btn-outline-primary text-uppercase w-25 py-2"
+							onClick={(event) => this.navigate(event, "rebate", "review-rebate")}
+						>Review Rebate</button>
 					</div>
 			    	<div className="text-center py-4">
 						<button
@@ -244,6 +276,27 @@ class MultiStepForm extends Component {
 					</div>
 
 				</div>
+
+				{/* Review Rebate */}
+				<div className="bg-white p-3 step d-none" id="review-rebate">
+    	            <h1 className="text-center mb-4">Review Rebate</h1>
+    	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laboriosam nulla minus sint provident id rerum porro. Ratione, harum.</p>
+    	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laboriosam nulla minus sint provident id rerum porro. Ratione, harum.</p>
+    	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laboriosam nulla minus sint provident id rerum porro. Ratione, harum.</p>
+				
+    	            <div className="custom-control custom-checkbox mb-3">
+				      <input type="checkbox" className="custom-control-input" id="review-rebate-i-agree" name="review-rebate-i-agree" />
+				      <label className="custom-control-label" for="review-rebate-i-agree">I agree to the terms and conditions stated above.</label>
+			    	</div>
+
+			    	<div className="py-4">
+						<button
+							type="button"
+							className="btn btn-outline-primary text-uppercase w-25 py-2 mr-4 font-weight-bold"
+							onClick={(event) => this.navigate(event, "review-rebate", "rebate")}>Go back</button>
+					</div>
+				</div>
+
 
 
 				{/* Contact Details */}
@@ -307,7 +360,7 @@ class MultiStepForm extends Component {
 
 
 				{/* Payment Details */}
-				<div className="bg-white p-3" id="payment-details">
+				<div className="bg-white p-3 d-none" id="payment-details">
 
 					<h1 className="text-center mb-4">Payment Details</h1>
 
@@ -416,8 +469,8 @@ class MultiStepForm extends Component {
     	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laboriosam nulla minus sint provident id rerum porro. Ratione, harum.</p>
 				
     	            <div className="custom-control custom-checkbox mb-3">
-				      <input type="checkbox" className="custom-control-input" id="i-agree" name="i-agree" />
-				      <label className="custom-control-label" for="i-agree">I agree to the terms and conditions stated above.</label>
+				      <input type="checkbox" className="custom-control-input" id="complete-and-submit-i-agree" name="complete-and-submit-i-agree" />
+				      <label className="custom-control-label" for="complete-and-submit-i-agree">I agree to the terms and conditions stated above.</label>
 			    	</div>
 
 			    	<div className="text-center py-4">
@@ -430,41 +483,6 @@ class MultiStepForm extends Component {
 							className="btn btn-outline-primary text-uppercase w-25 py-2 font-weight-bold bg-aqua">Continue</button>
 					</div>
 				</div>
-
-
-				{/* Modal box - I'm not ready yet, please email me a quote 
-				<div className="modal fade" id="emailQuoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				  <div className="modal-dialog" role="document">
-				    <div className="modal-content">
-				      <div className="modal-header pb-0">
-				        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div className="modal-body pt-0">
-				      <h5 className="mb-3" id="exampleModalLabel">Email Address</h5>
-						<div className="input-group">
-						  <input type="text" className="form-control" />
-						  <span className="input-group-btn">
-						    <button className="btn btn-outline-primary bg-aqua" type="button">Go!</button>
-						  </span>
-						</div>
-				      </div>
-				    </div>
-				  </div>
-				</div> */}
-
-
-
-
-
-
-
-				
-
-
-
-
 
 
 			</div>

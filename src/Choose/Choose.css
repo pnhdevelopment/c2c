@@ -83,14 +83,14 @@
 }
 
 
-#choose .btn-outline-primary,
+/*#choose .btn-outline-primary,
 #choose .btn-outline-primary:hover, 
 #choose .btn-outline-primary:active, 
 #choose .btn-outline-primary:focus {
     color: white;
     background-color: #4dccde;
     border-color: #4dccde;
-}
+}*/
 
 #choose .download{
 	background: white;

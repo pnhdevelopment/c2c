@@ -11,10 +11,19 @@ class SearchResults extends Component {
 				<div className="row">
 
 					<div className="col-12 col-lg-5">
-						Premium: 
-						<button type="button" className="btn btn-outline-primary ml-1 no-radius px-3 py-1 active">Weekly</button>
-						<button type="button" className="btn btn-outline-primary ml-1 no-radius px-3 py-1">Monthly</button>
+						<span className="mr-2">Premium:</span>
+						<div className="btn-group btn-group-toggle" data-toggle="buttons">
+							<label className="btn btn-outline-primary mr-2 no-radius active">
+								<input type="radio" name="options" id="option1" autocomplete="off" checked />Weekly
+							</label>
+							<label className="btn btn-outline-primary no-radius">
+								<input type="radio" name="options" id="option2" autocomplete="off" />Monthly
+							</label>
+						</div>
+
 						<input type="range" className="custom-range mt-3" min="0" max="5" />
+
+
 					</div>
 
 					<div className="col-12 col-lg-7 ml-auto text-left text-lg-right">

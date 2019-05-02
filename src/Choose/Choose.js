@@ -10,15 +10,7 @@ import './Choose.css';
 
 class App extends Component {
 
-
-  componentDidMount(){
-
-  
-
-
-  	
-
-  }
+  componentDidMount(){ }
 
   render() {
     return (
@@ -148,7 +140,7 @@ class App extends Component {
 			    </div>
 
 			    <div className="col-12 col-lg-6 mb-4 text-center">
-					<button type="button" className="btn btn-outline-primary text-uppercase continue">Continue</button>
+					<button type="button" className="btn btn-outline-primary text-uppercase bg-aqua continue">Continue</button>
 			    </div>
 
 			  </div>
@@ -160,16 +152,17 @@ class App extends Component {
 			  <div className="modal-dialog" role="document">
 			    <div className="modal-content">
 			      <div className="modal-header pb-0">
+			      	<h5 className="mb-3" id="exampleModalLabel">Email Address</h5>
 			        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
-			      <div className="modal-body pt-0">
-			      <h5 className="mb-3" id="exampleModalLabel">Email Address</h5>
+			      <div className="modal-body pt-0 mb-4">
+			      
 					<div className="input-group">
 					  <input type="text" className="form-control" />
 					  <span className="input-group-btn">
-					    <button className="btn btn-outline-primary" type="button">Go!</button>
+					    <button className="btn btn-outline-primary bg-aqua" type="button">Go!</button>
 					  </span>
 					</div>
 			      </div>
