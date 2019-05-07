@@ -23,11 +23,11 @@ const client = new ApolloClient({
 class Compare extends Component {
 
 	constructor() {
-        super();
-        this.state = {
-            results: null
-        };
-    }
+    super();
+    this.state = {
+        results: null
+    };
+  }
 
 	render() {
 		return (
@@ -87,7 +87,7 @@ class Compare extends Component {
       return <div className="container" id="compare">
 			<div className="row">
 				<div className="col-12 col-lg-3">
-					<SearchForm />
+					<SearchForm data={data} />
 				</div>
 
 				<div className="col-12 col-lg-9 p-3 p-lg-0">

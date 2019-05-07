@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 
 // import ProgressBar from '../ProgressBar/ProgressBar.js';
 
+/* NOTE --- API NEEDS TO BE ABLE TO SEARCH BY POLICY ID */
+
 
 import './Choose.css';
 

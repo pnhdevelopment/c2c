@@ -6,6 +6,19 @@ class SearchResults extends Component {
     	<div className="bg-white mb-3 p-3">
 		<div className="row">
 
+			{/* <div className="container" id="compare">
+					<div className="row">
+						<div className="col-12 col-lg-3">
+							<SearchForm />
+						</div>
+
+						<div className="col-12 col-lg-9 p-3 p-lg-0">
+							<SearchResults />
+						</div>					
+
+					</div>
+				</div> */}
+
 			{/* Search info */}
 			{/* <div className="container container mb-3">
 				<div className="row">
