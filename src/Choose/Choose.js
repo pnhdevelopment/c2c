@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
-import $ from 'jquery';
+// import $ from 'jquery';
 
 
 // import ProgressBar from '../ProgressBar/ProgressBar.js';
@@ -132,11 +132,17 @@ class App extends Component {
 			  <div className="row d-flex align-items-center">
 			    
 			    <div className="col-12 col-lg-6 mb-4 text-center">
-					<a download href="#" className="download">
+					<a download href="#test" className="download">
 						Download product disclosure statement
 						<i className="far fa-file-pdf"></i>
 					</a><br/>
-					<a className="email-quote" id="myBtn" data-toggle="modal" data-target="#emailQuoteModal">Email quote to me</a>
+					<a
+						className="email-quote"
+						id="myBtn"
+						data-toggle="modal"
+						data-target="#emailQuoteModal"
+						href="#test"
+					>Email quote to me</a>
 			    </div>
 
 			    <div className="col-12 col-lg-6 mb-4 text-center">

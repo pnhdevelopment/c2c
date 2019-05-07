@@ -1,18 +1,18 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import './MultiStepForm.css';
 
 
 
-import reviewAndJoin from './review-and-join.PNG';
+// import reviewAndJoin from './review-and-join.PNG';
 import youWillNeed from './youWillNeed.PNG';
-import aboutYou from './about-you.PNG';
-import aboutYou2 from './about-you2.PNG';
-import aboutYou3 from './about-you3.PNG';
-import rebate from './reabate.PNG';
-import contactDetails from './contact-details.PNG';
-import paymentDetails from './payment-details.PNG';
-import completeAndSubmit from './complete-and-submit.PNG';
+// import aboutYou from './about-you.PNG';
+// import aboutYou2 from './about-you2.PNG';
+// import aboutYou3 from './about-you3.PNG';
+// import rebate from './reabate.PNG';
+// import contactDetails from './contact-details.PNG';
+// import paymentDetails from './payment-details.PNG';
+// import completeAndSubmit from './complete-and-submit.PNG';
 
 class MultiStepForm extends Component {
 
@@ -59,7 +59,7 @@ class MultiStepForm extends Component {
 				    		type="button"
 				    		className="btn btn-outline-primary d-block m-auto text-uppercase font-weight-bold px-5 py-3 bg-aqua"
 				    		onClick={(event) => this.navigate(event, "review-and-join", "about-you-1")}>Continue</button>
-				    	<a href="#"
+				    	<a href="#test"
 				    		className="email-quote d-inline-block text-center my-4"
 				    		data-toggle="modal"
 				    		data-target="#emailQuoteModal">I'm not ready yet,<br/> please email me a quote.</a>

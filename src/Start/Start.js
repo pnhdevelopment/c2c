@@ -1,10 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import './Start.css';
 
 // import ProgressBar from '../ProgressBar/ProgressBar.js';
 
 
 class Start extends Component {
+
 
   handleClick(event, id) {
 
@@ -148,9 +151,11 @@ class Start extends Component {
         <div className="container mb-5 hidden d-none" id="lets-compare">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4 m-auto text-center p-0">
-              <button type="button" className="btn btn-outline-primary w-100 font-weight-bold no-radius">
-                Let's compare your cover
-              </button>
+              <Link to="/compare">
+                <button type="button" className="btn btn-outline-primary w-100 font-weight-bold no-radius">
+                  Let's compare your cover
+                </button>
+              </Link>
             </div>
           </div>
         </div>

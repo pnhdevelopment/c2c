@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './Finish.css';
 import bg from './bg.svg';
 
@@ -19,7 +19,7 @@ class ThankYou extends Component {
             <h1>Thank you for using <span>Care to Compare</span></h1>
             <p>You will receive an email from us within 3 business days with full details of your insurance policy.</p>
             <p>Because of you, our charity partners are one step closer to relieving the burden of disease.</p>
-            <a href="#">Return to home</a>
+            <a href="#test">Return to home</a>
           </div>
         </div>
 

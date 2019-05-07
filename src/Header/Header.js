@@ -14,17 +14,17 @@ class Header extends Component {
 				  <a className="navbar-brand" href="https://caretocompare.com.au">
 				    <img src={logo} alt="logo" />
 				  </a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
+				  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span className="navbar-toggler-icon"></span>
 				  </button>
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				      <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
-				      <li class="nav-item"><a class="nav-link" href="#">REGISTER YOUR INTEREST</a></li>
-				      <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-				      <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
-				      <li class="nav-item"><a class="nav-link" href="#">ABOUT HEALTH INSURANCE</a></li>
+				  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul className="navbar-nav ml-auto">
+				      <li className="nav-item active"><a className="nav-link" href="#test">HOME</a></li>
+				      <li className="nav-item"><a className="nav-link" href="#test">REGISTER YOUR INTEREST</a></li>
+				      <li className="nav-item"><a className="nav-link" href="#test">FAQ</a></li>
+				      <li className="nav-item"><a className="nav-link" href="#test">ABOUT US</a></li>
+				      <li className="nav-item"><a className="nav-link" href="#test">ABOUT HEALTH INSURANCE</a></li>
 				    </ul>
 				  </div>
 				</nav>

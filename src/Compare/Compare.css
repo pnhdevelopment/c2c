@@ -7,6 +7,10 @@
 	padding: 0;
 }
 
+#compare ul.covers li{
+	overflow-wrap: break-word;
+}
+
 #compare ul.covers li:before {
 	content: '\2713';
 	margin: 10px;

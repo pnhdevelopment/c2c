@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Start from './Start/Start.js';
 import Finish from './Finish/Finish.js';

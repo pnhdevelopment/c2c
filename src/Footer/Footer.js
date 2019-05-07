@@ -11,24 +11,24 @@ class Footer extends Component {
 
 				<div className="row">
 					<div className="col-12 col-md-4">
-						<a href="#">Our story</a><br/>
-						<a href="#">Our charity partners</a><br/>
-						<a href="#">Our impact</a><br/>
-						<a href="#">Our health insurance partners</a><br/>
-						<a href="#">Our team</a><br/>
+						<a href="#test">Our story</a><br/>
+						<a href="#test">Our charity partners</a><br/>
+						<a href="#test">Our impact</a><br/>
+						<a href="#test">Our health insurance partners</a><br/>
+						<a href="#test">Our team</a><br/>
 					</div>
 					<div className="col-12 col-md-4">
-						<a href="#">How Care to Compare works</a><br/>
-						<a href="#">Who we compare</a><br/>
-						<a href="#">Our website Terms & Conditions</a><br/>
-						<a href="#">Our Privacy Policy</a><br/>
+						<a href="#test">How Care to Compare works</a><br/>
+						<a href="#test">Who we compare</a><br/>
+						<a href="#test">Our website Terms & Conditions</a><br/>
+						<a href="#test">Our Privacy Policy</a><br/>
 					</div>
 					<div className="col-12 col-md-4">
-						<a href="#">Latest news</a><br/>
-						<a href="#">Blog</a><br/>
-						<a href="#">Media</a><br/>
-						<a href="#">Contact us</a><br/>
-						<a href="#">Sitemap</a><br/>
+						<a href="#test">Latest news</a><br/>
+						<a href="#test">Blog</a><br/>
+						<a href="#test">Media</a><br/>
+						<a href="#test">Contact us</a><br/>
+						<a href="#test">Sitemap</a><br/>
 					</div>
 				</div>
 				

@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './Buy.css';
 
 // import ProgressBar from '../ProgressBar/ProgressBar.js';
 
-import yourSigningUpFor from './your-signing-up-for.PNG';
+// import yourSigningUpFor from './your-signing-up-for.PNG';
 import MultiStepForm from './MultiStepForm.js';
 
 import YourSummary from './YourSummary.js';
