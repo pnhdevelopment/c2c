@@ -15,27 +15,8 @@ import gql from 'graphql-tag'
 import './Compare.css';
 
 
-const client = new ApolloClient({
-    uri: 'http://localhost:4000/graphql'
-});
 
-
-class Compare extends Component {
-
-	constructor() {
-    super();
-    this.state = {
-        results: null
-    };
-  }
-
-	render() {
-		return (
-
-  <ApolloProvider client={client}>
-      
-  <Query
-    query={gql`
+const GET_DATA = gql`
       {
   search(
     policyType: HOSPITAL
@@ -76,12 +57,24 @@ class Compare extends Component {
       totalRecords
     }
   }
-}
+}`;
 
-    `}
-  >
+
+class Compare extends Component {
+
+	constructor() {
+    super();
+    this.state = {
+        results: null
+    };
+  }
+
+
+	render() {
+		return (
+  <Query query={GET_DATA} >
     {({ loading, error, data }) => {
-      if (loading) return <p>Loading...</p>
+      if (loading) return <div className="loader"></div>
       if (error) return <p>Something went wrong...</p>
 
       return <div className="container" id="compare">
@@ -99,10 +92,6 @@ class Compare extends Component {
 
     }}
   </Query>
-
-
-  </ApolloProvider>
-
 		);
 	}
 

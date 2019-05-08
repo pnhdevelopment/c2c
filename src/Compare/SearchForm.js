@@ -13,37 +13,33 @@ class SearchForm extends Component {
     	};
   	}
 
-  	componentDidUpdate(nextProps){
-	    if (nextProps.location !== this.props.location) {
-	    	// alert('changed!');
-	      // const values = queryString.parse(this.props.location.search);
-	      // this.performSearch(values.q);
-	    }
-	}
-
 	updateCoverFor(e){
+		// console.log( this.state.cover_for );
+
 		this.setState({
 			cover_for: e.target.value
 		});
-		this.handleURL();
+
+		// console.log( this.state.cover_for );
+		
+		// this.props.history.push({
+	 //      pathname: '/compare',
+	 //      search: '?cover_for=' + this.state.cover_for + '&state=' + this.state.australianState 
+	 //    });
+
 	}
+
 
 	updateAustralianState(e){
-		this.setState({
-			australianState: e.target.value
-		});
-		this.handleURL();
-	}
+		// this.setState({
+		// 	australianState: e.target.value
+		// });
 
-	handleURL(){
-		// alert(e.target.value)
-
-		this.props.history.push({
-	      pathname: '/compare',
-	      search: '?cover_for=' + this.state.cover_for + '&state=' + this.state.australianState 
-	    });
-
-
+		// this.props.history.push({
+	 //      pathname: '/compare',
+	 //      search: '?cover_for=' + this.state.cover_for + '&state=' + this.state.australianState 
+	 //    });
+		
 	}
 
 	render() {
@@ -56,7 +52,7 @@ class SearchForm extends Component {
 
 				<div className="form-group">
 					<label className="d-inline-block font-weight-bold" htmlFor="cover_for">Cover for:</label>
-				    <select className="form-control" name="cover_for" onClick={(e) => this.updateCoverFor(e)} >
+				    <select className="form-control" name="cover_for" onChange={(e) => this.updateCoverFor(e)} >
 						{/* <option>Me</option>
 						<option>Me and my partner</option>
 						<option>My family</option>

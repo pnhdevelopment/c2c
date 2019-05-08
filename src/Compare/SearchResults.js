@@ -60,7 +60,7 @@ class SearchResults extends Component {
 
 
 			{this.props.data.search.policies.map(policy =>
-			<div className="col-12 col-md-6 col-lg-4 mb-3">
+			<div className="col-12 col-md-6 col-lg-4 mb-3" key={policy.id}>
 				<div className="item-wrapper text-center p-2 mb-3">
 					<img className="w-100 mb-3" src="http://via.placeholder.com/250x150" alt="" />
 					<h1 className="font-weight-bold h3">{policy.policyName}</h1>
@@ -72,7 +72,7 @@ class SearchResults extends Component {
 						<ul className="covers text-left">
 							{ policy.hospitalComponent.inclusions.map(inclusion => {
 				                if(inclusion.covered){
-				                  return <li className="text-lowercase">{inclusion.category}</li>
+				                  return <li className="text-lowercase" key={inclusion.category}>{inclusion.category}</li>
 				                }
 				              })
 				            }
@@ -84,7 +84,7 @@ class SearchResults extends Component {
 						<ul className="covers text-left">
 							{ policy.hospitalComponent.inclusions.map(inclusion => {
 				                if(inclusion.covered){
-				                  return <li className="text-lowercase">{inclusion.category}</li>
+				                  return <li className="text-lowercase" key={inclusion.category}>{inclusion.category}</li>
 				                }
 				              })
 				            }
